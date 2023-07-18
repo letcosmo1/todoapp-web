@@ -1,0 +1,23 @@
+<header>
+    <div class="header-logo">
+        <img src="./assets/tick.png" alt="">
+        <h1>TodoApp</h1>
+    </div>
+</header>
+<main>
+    <div class="table-container">
+        <form action="">
+            <input type="text" name="nome-tarefa" placeholder="Adicionar tarefa" [(ngModel)]="nome_tarefa">
+            <button (click)="cadastrarTarefa()"><i class="fa-solid fa-plus"></i></button>
+        </form>
+        <table>
+            <tr *ngFor="let tarefa of tarefas">
+                <td><input type="checkbox" [checked]="tarefa.completo == 0 ? false : true" (change)="alterarCompletoTarefa(tarefa)"></td>
+                <td class="nome-tarefa" [class]="tarefa.completo == 0 ? null : 'riscar'">{{tarefa.nome_tarefa}}</td>
+                <td class="botao-alterar"><button (click)="alterarNomeTarefa(tarefa)"><i class="fa-solid fa-wrench"></i></button></td>
+                <td class="botao-remover"><button (click)="excluirTarefa(tarefa)"><i class="fa-solid fa-trash"></i></button></td>
+            </tr>
+        </table>
+    </div>
+</main>
+

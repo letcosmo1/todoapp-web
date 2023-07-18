@@ -1,0 +1,93 @@
+header {
+    height: 70px;
+    background-color: var(--green);
+    margin-bottom: 24px;
+}
+.header-logo {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin: 0 24px;
+}
+.header-logo img {
+    width: 45px;
+}
+.header-logo h1 {
+    color: white;
+    font-size: 24px;
+    margin-left: 12px;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.table-container {
+    border: 1px solid var(--gray);
+    border-radius: 4px;
+    padding: 18px 42px;
+}
+.table-container form {
+    margin-bottom: 18px;
+}
+.table-container form input {
+    height: 34px;
+    width: 220px;
+    border: 1px solid var(--gray);
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    padding: 0 12px;
+    font-size: 14px;
+    color: var(--dark-gray);
+}
+.table-container form input:focus {
+    outline: none;
+}
+.table-container form button {
+    cursor: pointer;
+    height: 36px;
+    width: 41px;
+    border: none;
+    border-left: none;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    font-size: 14px;
+    color: white;
+    background-color: var(--green);
+}
+.table-container table {
+    border: 1px solid var(--gray);
+    border-bottom: none;
+    border-radius: 3px;
+}
+.table-container td {
+    padding: 6px 12px;
+    border-bottom: 1px solid var(--gray);
+    border-right: 1px solid var(--gray);
+    font-size: 14px;
+    color: var(--dark-gray);
+}
+.table-container td input {
+    cursor: pointer;
+}
+.nome-tarefa {
+    width: 216px;
+}
+.nome-tarefa.riscar{
+    text-decoration: line-through;
+}
+.table-container .botao-remover {
+    border-right: none;
+}
+.table-container td button {
+    cursor: pointer;
+    border: none;
+    background-color: white;
+    color: var(--gray);
+}
+.table-container .botao-alterar i {
+    color: var(--yellow);
+}
+.table-container .botao-remover i{
+    color: var(--red);
+}
